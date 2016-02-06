@@ -1,0 +1,22 @@
+---
+author: dainius
+comments: true
+date: 2010-06-17 08:23:06+00:00
+layout: post
+slug: fake-it
+title: Fake it!
+wordpress_id: 447
+categories:
+- asmeninis tobulėjimas
+tags:
+- bendri
+- dienoraštis
+- idėjos
+- mintys
+- tobulėjimas
+---
+
+>   Jau kartą minėtas mano straipsniuose, angliškas posakis: „Apsimesk tokiu, kokiu nori būti iki tol, kol juo tapsi” (*„fake it till you make it”*). Jei „apsimetate”, kad puikiai valdote savo laiką, tuomet tikrai tampate laiko ekspertu. Jei nuolat būnate tvarkingas, tuomet tampate tvarkingu žmogumi.
+
+
+[Daugiau čia](http://povilas.panavas.lt/blogas/2010/06/17/gyvenimo-vaidmenys-ka-jus-vaidinate/).

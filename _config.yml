@@ -1,0 +1,25 @@
+# Site settings
+permalink: /:title
+title: 30dienu.lt
+header-img: img/home-bg.jpg
+email: dainiuxt@gmail.com
+description: "30 dienų gali pakeisti tavo gyvenimą. Pradėk keistis jau šiandien!"
+baseurl: ""
+url: "http://30dienu.lt"
+twitter_username: 
+github_username:  
+facebook_username:  
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+# permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+sitemap:
+  lastmod: 2015-12-23
+  priority: 0.7
+  changefreq: 'monthly'
+  exclude: 'yes'
+  

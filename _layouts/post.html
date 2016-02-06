@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<!-- Post Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>{{ page.title }}</h1>
+                    {% if page.subtitle %}
+                    <h2 class="subheading">{{ page.subtitle }}</h2>
+                    {% endif %}
+                    <span class="meta">Paskelbta <!--{% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %}--> {{ page.date | date: "%Y-%m-%-d" }}</span>
+<div><a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}"></a>
+  {% capture words %}
+    {{ content | number_of_words | minus: 180 }}
+    {% endcapture %}
+    {% unless words contains "-" %}
+    {{ words | plus: 180 | divided_by: 180 | append: " min. skaitymo" | prepend: " " }}
+    {% endunless %}
+  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                {% include share-page.html %}
+				{{ content }}
+                {% include share-page.html %}
+                
+                <hr>
+
+                <ul class="pager">
+                    {% if page.previous.url %}
+                    <li class="previous">
+                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Ankstesnis įrašas</a>
+                    </li>
+                    {% endif %}
+                    {% if page.next.url %}
+                    <li class="next">
+                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Sekantis įrašas &rarr;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+
+                {% include comments.html %}
+
+            </div>
+        </div>
+    </div>
+</article>
+
+<hr>
