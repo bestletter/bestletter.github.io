@@ -1,0 +1,53 @@
+# Jekyll config file http://jekyllrb.com/docs/configuration/
+
+# Handling reading
+exclude:               
+  -                    README.md
+  -                    LICENSE
+  -                    CNAME
+  -                    Gemfile
+encoding:              "utf-8"
+
+# Plugins
+gems:                  
+  -                    jekyll-mentions
+  -                    jemoji
+  -                    jekyll-redirect-from
+  -                    jekyll-sitemap
+
+# Conversion 
+markdown:              kramdown
+highlighter:           rouge
+
+# Outputting
+permalink:             /:year/:title/
+#relative_permalinks:   true
+paginate_path:         /page:num/
+paginate:              5
+timezone:              Asia/Beijing
+locale:                en_us
+
+# Serving
+baseurl:               "" # does not include hostname
+
+# URL of site, include http://, do not include a trailing slash
+#url:                   http://xiangyingchang.com
+
+# Site settings
+title:                 向应昌
+description:           "Good things take time and patience."
+icon:                  "/assets/img/m-icon-white-on-blue.png"
+header_image:          "/assets/img/home-bg.jpg"
+author:
+  name:                向应昌
+  url:                 http://goo.gl/NNDGA8
+  email:               lovecvoice@gmail.com
+  twitter:             xiangyingchang
+  googleplus:          应昌
+  github:              xiangyingchang
+  tumblr:              481550482
+  linkedin:            lovecvoice
+  facebook:            lovecvoice
+ga_trackid:            "UA-60129317-1"
+fb_admins:             
+disqus_shortname:      向应昌
